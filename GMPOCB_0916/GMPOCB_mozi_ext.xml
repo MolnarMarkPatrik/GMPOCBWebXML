@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mozi>
+    <film id="film2" mufaj="vigjatek">
+    <rendezo>
+        <nev>Kovács Péter</nev>
+        <eletkor>45</eletkor>
+    </rendezo>
+    <iro>
+        <nev>Nagy Anna</nev>
+        <dij>Oscar</dij>
+    </iro>
+    </film>
+</mozi>

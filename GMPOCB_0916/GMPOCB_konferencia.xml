@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia>
+    <cim>Mesterséges Intelligencia Konferencia 2026</cim>
+    
+    <hallgatok>
+        <hallgato>
+            <nev>Molnár Vajk Boldizsár</nev>
+            <lakcim>3515 Miskolc, Egyetemváros, E/4 kollégium</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Máriássi Vibien</nev>
+            <lakcim>3515 Miskolc, Egyetemváro, E/4 kollégium</lakcim>
+        </hallgato>
+    </hallgatok>
+    
+    <helyszin>Miskolci Egyetem, Informatikai Intézet</helyszin>
+    
+    <eloado>
+        <nev>Dr. Neumann János</nev>
+        <adoszam>12345678-2-05</adoszam>
+        <lakcim>1053 Budapest, Reáltanoda u. 1.</lakcim>
+    </eloado>
+    
+    <datum>2026.10.13.</datum>
+</konferencia>
