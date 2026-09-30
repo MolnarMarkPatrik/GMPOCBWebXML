@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GMPOCB_kurzusfelvetel SYSTEM "GMPOCB_kurzusfelvetel.dtd">
+
+<GMPOCB_kurzusfelvetel tanev="2026/27 I. félév" egyetem="Miskolci Egyetem">
+    
+    <hallgato>
+        <hnev>Teszt Elek</hnev>
+        <szulev>2000</szulev>
+        <szak evf="2">Mérnökinformatikus</szak>
+    </hallgato>
+    
+    <kurzusok>
+        <kurzus id="K1">
+            <kurzusnev>Programozás alapjai</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/101</hely>
+            <idopont>Hétfő 10:00-12:00</idopont>
+            <oktato>Dr. Kovács Péter</oktato>
+        </kurzus>
+
+        <kurzus id="K2" jovahagyas="igen" nyelv="Angol">
+            <kurzusnev>Webes adatkezelő környezetek</kurzusnev>
+            <kredit>4</kredit>
+            <hely>In/202</hely>
+            <idopont>Szerda 8:00-10:00</idopont>
+            <idopont>Szerda 12:00-14:00</idopont>
+            <oktato>Dr. Kovács László József</oktato>
+            <oraado>Dr. Bednarik László</oraado>
+        </kurzus>
+
+        <kurzus id="K3" nyelv="Magyar">
+            <kurzusnev>Elektrotechnika</kurzusnev>
+            <kredit>5</kredit>
+            <hely>3. előadó</hely>
+            <idopont>Kedd 14:00-16:00</idopont>
+            <oktato>Szabó Norbert István</oktato>
+            <oraado>Nagy Gábor</oraado>
+        </kurzus>
+    </kurzusok>
+    
+</GMPOCB_kurzusfelvetel>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<DOCTYPE mozi SYSTEM "GMPOCB_mozi.dtd">-->
+
+<!DOCTYPE mozi [<!ELEMENT mozi (film)*>
+
+        <!ELEMENT film (rendezo+,szinesz+,íro+)>
+        <!ATTLIST film id ID #REQUIRED>
+        <!ATTLIST film mufaj (horror | romantikus | thiller) "horror">
+
+        <!ELEMENT rendezo EMPTY>
+        <!ATTLIST rendezo id ID #REQUIRED>
+        <!ATTLIST rendezo nev CDATA #IMPLIED>
+
+        <!ELEMENT szinesz (gyerekszinesz | musicalszinesz | szinkronszinesz)*>
+        <!ATTLIST szinesz id ID #REQUIRED>
+        <!ATTLIST szinesz nev CDATA #IMPLIED>
+
+        <!ELEMENT gyerekszinesz EMPTY>
+        <!ELEMENT musicalszinesz EMPTY>
+        <!ELEMENT szinkronszinesz EMPTY>
+
+        <!ELEMENT íro EMPTY>
+        <!ATTLIST íro id ID #REQUIRED>
+
+]>
+
+<mozi>
+    <film id="f_belso_1" mufaj="horror">
+        <rendezo id="r_1" nev="Belső Rendező" />
+        <szinesz id="sz_1" nev="Belső Színész 1">
+            <szinkronszinesz />
+        </szinesz>
+        <szinesz id="sz_2" nev="Belső Színész 2" />
+        <íro id="i_1" />
+    </film>
+</mozi>
