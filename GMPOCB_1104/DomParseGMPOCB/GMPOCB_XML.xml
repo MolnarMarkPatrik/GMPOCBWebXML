@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vendeglatas>
+    
+    <Etterem Ekod="E01">
+        <nev>Kék Elefánt Étterem</nev>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Egyetem út</Utca>
+            <Hazszam>1</Hazszam>
+        </Cim>
+        <Csillag>5</Csillag>
+    </Etterem>
+
+    <Foszakacs Fkod="F01" E_F="E01">
+        <Nev>Gordon Ramsay</Nev>
+        <Eletkor>55</Eletkor>
+        <Vegzettseg>Mester</Vegzettseg>
+    </Foszakacs>
+
+    <Szakacs Szkod="SZ01" E_sz="E01">
+        <Nev>Kovács János</Nev>
+        <Reszleg>Húsok</Reszleg>
+        <Vegzettseg>Szakács</Vegzettseg>
+    </Szakacs>
+
+    <Gyakornok Gykod="GY01" E_GY="E01">
+        <Nev>Tóth Bence</Nev>
+        <Gyakorlat>
+            <Kezdete>2026-09-01</Kezdete>
+            <Idotartama>6</Idotartama>
+        </Gyakorlat>
+        <Muszak>Nappali</Muszak>
+    </Gyakornok>
+
+    <Vendeg Vkod="V01">
+        <Nev>Nagy Anna</Nev>
+        <Eletkor>30</Eletkor>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Fő utca</Utca>
+            <Hazszam>10</Hazszam>
+        </Cim>
+    </Vendeg>
+
+    <Rendeles E_V_E="V01">
+        <Osszeg>15000</Osszeg>
+        <Etel>Bécsi szelet</Etel>
+    </Rendeles>
+
+</Vendeglatas>
