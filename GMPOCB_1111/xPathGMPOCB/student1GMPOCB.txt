@@ -1,0 +1,66 @@
+
+1. Összes student a class alatt (XPath: /class/student)
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+
+2. A 02-es ID-jú student (XPath: //student[@id='02'])
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+
+3. Bárhol lévő student elemek (XPath: //student)
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+
+4. Második student elem (XPath: /class/student[2])
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+
+5. Utolsó student elem (XPath: /class/student[last()])
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+
+6. Utolsó előtti student (XPath: /class/student[last()-1])
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+
+7. Első két student (XPath: /class/student[position()<=2])
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+
+8. A class összes gyermeke (XPath: /class/*)
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+
+9. Attribútummal rendelkező studentek (XPath: //student[@*])
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+
+10. Dokumentum összes eleme (XPath: //*)
+ -> class | Tartalom: Pál Kiss Pali 21 Piroska Vígh Piri 19 Ferenc Gordon Feri 25
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> keresztnev | Tartalom: Pál
+ -> vezeteknev | Tartalom: Kiss
+ -> becenev | Tartalom: Pali
+ -> kor | Tartalom: 21
+ -> student (ID: 02) | Tartalom: Piroska Vígh Piri 19
+ -> keresztnev | Tartalom: Piroska
+ -> vezeteknev | Tartalom: Vígh
+ -> becenev | Tartalom: Piri
+ -> kor | Tartalom: 19
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+ -> keresztnev | Tartalom: Ferenc
+ -> vezeteknev | Tartalom: Gordon
+ -> becenev | Tartalom: Feri
+ -> kor | Tartalom: 25
+
+11. 20 évnél idősebbek (XPath: /class/student[kor>20])
+ -> student (ID: 01) | Tartalom: Pál Kiss Pali 21
+ -> student (ID: 03) | Tartalom: Ferenc Gordon Feri 25
+
+12. Kereszt- és vezetéknevek (XPath: //student/keresztnev | //student/vezeteknev)
+ -> keresztnev | Tartalom: Pál
+ -> vezeteknev | Tartalom: Kiss
+ -> keresztnev | Tartalom: Piroska
+ -> vezeteknev | Tartalom: Vígh
+ -> keresztnev | Tartalom: Ferenc
+ -> vezeteknev | Tartalom: Gordon
