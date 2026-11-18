@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EdzoteremRendszer>
+
+    <Tag Tkod="t1">
+        <Nev>Kovács Anna</Nev>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Fő utca</Utca>
+            <Hazszam>12</Hazszam>
+        </Cim>
+        <!-- Többértékű attribútum példa -->
+        <Telefon>+36301112233</Telefon>
+        <Telefon>+36209998877</Telefon>
+        <SzuletesiEv>2002</SzuletesiEv>
+    </Tag>
+
+    <Tag Tkod="t2">
+        <Nev>Nagy Péter</Nev>
+        <Cim>
+            <Varos>Miskolc</Varos>
+            <Utca>Egyetem út</Utca>
+            <Hazszam>5</Hazszam>
+        </Cim>
+        <Telefon>+36704445566</Telefon>
+        <SzuletesiEv>2000</SzuletesiEv>
+    </Tag>
+
+
+    <Berlet Bkod="b1" Tag_Tkod="t1">
+        <Tipus>Havi korlátlan</Tipus>
+        <Ar>18500</Ar>
+        <LejaratiDatum>2026-12-31</LejaratiDatum>
+    </Berlet>
+
+    <Berlet Bkod="b2" Tag_Tkod="t2">
+        <Tipus>Alkalmas (10 alkalmas)</Tipus>
+        <Ar>22000</Ar>
+        <LejaratiDatum>2027-02-15</LejaratiDatum>
+    </Berlet>
+
+
+    <Edzo Ekod="e1">
+        <Nev>Szabó Gábor</Nev>
+        <Szakirany>Súlyzósszoba / Erőnlét</Szakirany>
+        <Email>gabor@edzoterem.hu</Email>
+    </Edzo>
+
+    <Edzo Ekod="e2">
+        <Nev>Tóth Eszter</Nev>
+        <Szakirany>Spinning / Aerobik</Szakirany>
+        <Email>eszter@edzoterem.hu</Email>
+    </Edzo>
+
+
+    <Terem Tkod_terem="terem1">
+        <TeremSzam>101</TeremSzam>
+        <Kapacitas>30</Kapacitas>
+        <Emelet>Földszint</Emelet>
+    </Terem>
+
+    <Terem Tkod_terem="terem2">
+        <TeremSzam>205</TeremSzam>
+        <Kapacitas>15</Kapacitas>
+        <Emelet>1. emelet</Emelet>
+    </Terem>
+
+
+    <Ora Okod="o1" Edzo_Ekod="e1" Terem_Tkod="terem1">
+        <Megnevezes>CrossFit Alapok</Megnevezes>
+        <Idopont>Hétfő 16:00</Idopont>
+        <MaxLetszam>20</MaxLetszam>
+    </Ora>
+
+    <Ora Okod="o2" Edzo_Ekod="e2" Terem_Tkod="terem2">
+        <Megnevezes>Reggeli Spinning</Megnevezes>
+        <Idopont>Kedd 08:00</Idopont>
+        <MaxLetszam>15</MaxLetszam>
+    </Ora>
+
+
+    <Jelentkezes Tag_Tkod="t1" Ora_Okod="o1">
+        <JelentkezesDatuma>2026-11-01</JelentkezesDatuma>
+    </Jelentkezes>
+
+    <Jelentkezes Tag_Tkod="t2" Ora_Okod="o2">
+        <JelentkezesDatuma>2026-11-02</JelentkezesDatuma>
+    </Jelentkezes>
+
+</EdzoteremRendszer>

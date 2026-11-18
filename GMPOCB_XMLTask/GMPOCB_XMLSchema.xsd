@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="LetszamTipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="EdzoteremRendszer">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="Tag" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nev" type="xs:string"/>
+                            <xs:element name="Cim">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Varos" type="xs:string"/>
+                                        <xs:element name="Utca" type="xs:string"/>
+                                        <xs:element name="Hazszam" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Telefon" type="xs:string" maxOccurs="unbounded"/>
+                            <xs:element name="SzuletesiEv" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="Tkod" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Berlet" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Tipus" type="xs:string"/>
+                            <xs:element name="Ar" type="xs:integer"/>
+                            <xs:element name="LejaratiDatum" type="xs:date"/>
+                        </xs:sequence>
+                        <xs:attribute name="Bkod" type="xs:string" use="required"/>
+                        <xs:attribute name="Tag_Tkod" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Edzo" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Nev" type="xs:string"/>
+                            <xs:element name="Szakirany" type="xs:string"/>
+                            <xs:element name="Email" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="Ekod" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Terem" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TeremSzam" type="xs:integer"/>
+                            <xs:element name="Kapacitas" type="xs:integer"/>
+                            <xs:element name="Emelet" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="Tkod_terem" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Ora" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Megnevezes" type="xs:string"/>
+                            <xs:element name="Idopont" type="xs:string"/>
+                            <xs:element name="MaxLetszam" type="LetszamTipus"/>
+                        </xs:sequence>
+                        <xs:attribute name="Okod" type="xs:string" use="required"/>
+                        <xs:attribute name="Edzo_Ekod" type="xs:string" use="required"/>
+                        <xs:attribute name="Terem_Tkod" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Jelentkezes" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="JelentkezesDatuma" type="xs:date"/>
+                        </xs:sequence>
+                        <xs:attribute name="Tag_Tkod" type="xs:string" use="required"/>
+                        <xs:attribute name="Ora_Okod" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
